@@ -151,7 +151,7 @@ body {
   color: #000;
 }
 .customers {
-  max-width: 970px;
+  /* max-width: 970px; */
   height: 812px;
   background-color: #fff;
   padding-top: 30px;
