@@ -7,13 +7,13 @@ html(lang='en')
     link(rel='preconnect', href='https://fonts.googleapis.com')
     link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
     link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap', rel='stylesheet')
-    link(rel='stylesheet', href='../css/style.css')
+    link(rel='stylesheet', href='css/style.css')
   body
     .dashboard
       aside.sidebar
         .sidebar__logo
           button.dashboard__logo-button
-            img.dashboard__logo(src='../images/Logo.svg', alt='Dashboard Logo')
+            img.dashboard__logo(src='images/Logo.svg', alt='Dashboard Logo')
           span.version__number v.01
         nav.sidebar__nav
           ul.sidebar__list
@@ -69,14 +69,14 @@ html(lang='en')
               svg.sidebar__item-chevron(width='6', height='10', viewBox='0 0 6 10', fill='none', stroke='currentColor', xmlns='http://www.w3.org/2000/svg')
                 path(d='M1 9L5 5L1 1', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
         .sidebar__user
-          img.sidebar__user-avatar(src='../images/user-avatar.png', alt='User Avatar')
+          img.sidebar__user-avatar(src='images/user-avatar.png', alt='User Avatar')
           .sidebar__user-info
             span.sidebar__user-name Evano
             span.sidebar__user-role Project Manager
       main.main-content
         header.main-content__header
           button.sidebar__menu-button
-            img(src='..//images/sidebar-menu.svg', alt='')
+            img(src='images/sidebar-menu.svg', alt='')
           h1.main-content__title Hello Evano &#x1F44B;&#x1F3FC;,
         section.customers
           .customers__top-section
@@ -88,77 +88,103 @@ html(lang='en')
           table.customers__table
             thead
               tr.customers__table-row
+                td.customers__table-header
                 th.customers__table-header Customer Name
                 th.customers__table-header Company
                 th.customers__table-header Phone Number
                 th.customers__table-header Email
                 th.customers__table-header Country
                 th.customers__table-header Status
+                td.customers__table-header
             tbody
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Jane Cooper
                 td.customers__table-data Microsoft
                 td.customers__table-data (225) 555-0118
                 td.customers__table-data jane@microsoft.com
                 td.customers__table-data United States
-                td.customers__table-data.customers__table-status.customers__table-status--active
-                  | Active
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--active
+                    | Active
+                td.customers__table-data
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Floyd Miles
                 td.customers__table-data Yahoo
                 td.customers__table-data (205) 555-0100
                 td.customers__table-data floyd@yahoo.com
                 td.customers__table-data Kiribati
-                td.customers__table-data.customers__table-status.customers__table-status--inactive
-                  | Inactive
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--inactive
+                    | Inactive
+                td.customers__table-data
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Ronald Richards
                 td.customers__table-data Adobe
                 td.customers__table-data (302) 555-0107
                 td.customers__table-data ronald@adobe.com
                 td.customers__table-data Israel
-                td.customers__table-data.customers__table-status.customers__table-status--inactive
-                  | Inactive
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--inactive
+                    | Inactive
+                td.customers__table-data
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Marvin McKinney
                 td.customers__table-data Tesla
                 td.customers__table-data (252) 555-0107
                 td.customers__table-data marvin@tesla.com
                 td.customers__table-data Iran
-                td.customers__table-data.customers__table-status.customers__table-status--active
-                  | Active
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--active
+                    | Active
+                td.customers__table-data
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Jerome Bell
                 td.customers__table-data Google
                 td.customers__table-data (629) 555-0126
                 td.customers__table-data jerome@google.com
                 td.customers__table-data R&eacute;union
-                td.customers__table-data.customers__table-status.customers__table-status--active
-                  | Active
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--active
+                    | Active
+                td.customers__table-data
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Kathryn Murphy
                 td.customers__table-data Microsoft
                 td.customers__table-data (406) 555-0120
                 td.customers__table-data kathryn@microsoft.com
                 td.customers__table-data Cura&ccedil;ao
-                td.customers__table-data.customers__table-status.customers__table-status--active
-                  | Active
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--active
+                    | Active
+                td.customers__table-data
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Jacob Jones
                 td.customers__table-data Yahoo
                 td.customers__table-data (208) 555-0112
                 td.customers__table-data jacob@yahoo.com
                 td.customers__table-data Brazil
-                td.customers__table-data.customers__table-status.customers__table-status--active
-                  | Active
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--active
+                    | Active
+                td.customers__table-data
               tr.customers__table-row
+                td.customers__table-data
                 td.customers__table-data Kristin Watson
                 td.customers__table-data Facebook
                 td.customers__table-data (704) 555-0123
                 td.customers__table-data kristin@facebook.com
                 td.customers__table-data &angst;land Islands
-                td.customers__table-data.customers__table-status.customers__table-status--inactive
-                  | Inactive
+                td.customers__table-data
+                  .customers__table-status.customers__table-status--inactive
+                    | Inactive
+                td.customers__table-data
           .customers__pagination
             span.customers__pagination-info Showing data 1 to 8 of 256K entries
             .customers__pagination-controls
@@ -170,4 +196,4 @@ html(lang='en')
               a.customers__pagination-link.customers__pagination-ellipsis(href='#') ...
               a.customers__pagination-link(href='#') 40
               a.customers__pagination-link(href='#') &gt;
-    script(src='..//js/script.js', defer='')
+    script(src='js/script.js', defer='')
