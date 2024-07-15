@@ -374,6 +374,7 @@ body {
     margin-bottom: 15px;
   }
   .customers{
+    height: 720px;
     padding-top: 20px;
   }
   .customers__top-section {
@@ -427,6 +428,7 @@ body {
   padding: 0;
   padding-top: 15px;
   max-width: 425px;
+  height: 650px;
   }
   .customers__top-section{
     margin: 0;
